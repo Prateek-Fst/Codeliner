@@ -2,6 +2,7 @@ import { Typography, Box, Button } from "@mui/material";
 import MarqueeBanner from "./MarqueeBanner";
 import LearnMoreGradientBtn from "./LearnMoreGradientBtn";
 import PhoneFeatureRow from "./PhoneFeatureRow";
+import PhoneMockup from "./PhoneMockup";
 import PropTypes from "prop-types";
 
 const DigitalBankingSection = ({ className = "" }) => {
@@ -85,7 +86,7 @@ const DigitalBankingSection = ({ className = "" }) => {
           </section>
           <Box className="flex flex-col items-center gap-[110px] max-w-full z-[1] mq800:gap-[55px] mq1125:min-w-full mq450:gap-[27px] mq1350:flex-1">
             <PhoneFeatureRow
-              phoneImg="/iPhone-13-Pro@2x.png"
+              screenType="spend"
               feature1Icon="/Frame-15.svg"
               feature1Title="Fully compliant with regulatory requirement"
               feature1Desc="The governance of risk management with regulations is achieved by our risk management framework that is fully integrated to work with digital bank's operational-risk protocols and procedures."
@@ -122,15 +123,13 @@ const DigitalBankingSection = ({ className = "" }) => {
                   </Box>
                 </Box>
               </Box>
-              <img
-                className="h-[542.9px] w-[268.3px] relative object-cover mq800:flex-1"
-                loading="lazy"
-                alt=""
-                src="/iPhone-13-Pro@2x.png"
+              <PhoneMockup
+                screenType="home"
+                className="mq800:flex-1"
               />
             </section>
             <PhoneFeatureRow
-              phoneImg="/iPhone-13-Pro@2x.png"
+              screenType="profile"
               feature1Icon="/Frame-15.svg"
               feature1Title="No traditional branches"
               feature1Desc="Our Digital Banking out-of-the-box helps you to accelerate innovation while reducing risks and optimising operational costs for a seamless branchless experience.'"

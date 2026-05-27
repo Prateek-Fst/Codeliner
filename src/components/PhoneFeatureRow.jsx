@@ -1,10 +1,11 @@
 import { useMemo } from "react";
 import { Box } from "@mui/material";
 import PropTypes from "prop-types";
+import PhoneMockup from "./PhoneMockup";
 
 const PhoneFeatureRow = ({
   className = "",
-  phoneImg,
+  screenType = "profile",
   feature1Icon,
   feature1Title,
   feature1Desc,
@@ -38,7 +39,7 @@ const PhoneFeatureRow = ({
 
   return (
     <section className={`flex items-center gap-20 text-left text-base text-black font-[Archivo] mq800:gap-10 mq800:flex-wrap mq450:gap-5 ${className}`}>
-      <img className="h-[542.9px] w-[268.3px] relative object-cover mq800:flex-1" loading="lazy" alt="" src={phoneImg} />
+      <PhoneMockup screenType={screenType} className="mq800:flex-1" />
       <Box className="flex flex-col items-start !pt-5 !pb-5 !pl-0 !pr-0 gap-[43px] mq800:flex-1 mq450:gap-[21px]">
         <Box className="flex flex-col items-start gap-6">
           <Box className="w-[269px] flex items-center justify-center gap-[5px]">
@@ -74,7 +75,7 @@ const PhoneFeatureRow = ({
 
 PhoneFeatureRow.propTypes = {
   className: PropTypes.string,
-  phoneImg: PropTypes.string,
+  screenType: PropTypes.oneOf(["spend", "home", "profile"]),
   feature1Icon: PropTypes.string,
   feature1Title: PropTypes.string,
   feature1Desc: PropTypes.string,
