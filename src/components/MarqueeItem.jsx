@@ -7,7 +7,7 @@ const MarqueeItem = ({ className = "", label, waveImg, marginLeft }) => {
 
   return (
     <Box
-      className={`!ml-[-1049.1px] flex items-center gap-6 text-left text-[47px] text-black font-[Archivo] ${className}`}
+      className={`flex items-center gap-6 text-left text-[47px] text-black font-[Archivo] ${className}`}
       style={containerStyle}
     >
       <img className="h-[58px] w-[58px] relative" loading="lazy" alt="" src="/Vector3.svg" />
@@ -28,7 +28,7 @@ const MarqueeItem = ({ className = "", label, waveImg, marginLeft }) => {
       >
         Say
       </Typography>
-      <img className="h-[66px] w-[93.1px] relative object-contain" loading="lazy" alt="" src={waveImg} />
+      <img className="h-[66px] w-[93.1px] relative object-contain animate-wave-tilt" loading="lazy" alt="" src={waveImg} />
       <Typography
         className="!m-0 relative"
         variant="inherit"

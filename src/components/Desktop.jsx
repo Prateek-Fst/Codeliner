@@ -11,7 +11,7 @@ const Desktop = ({ className = "" }) => {
     { name1: "Zoomerr", vector: "/Vector1.svg", label: "Zoomerr" },
     { name1: "ArtVenue", vector: "/Group-46.svg", label: "ArtVenue" },
     { name1: "Kontrastr", vector: "/Group-47.svg", label: "kontrastr" },
-    { name1: "Waves", vector: "/Vector2.svg", label: "SHELLS" },
+    { name1: "Waves", vector: "/Vector2.svg", label: "WAVESMARATHON" },
   ]);
   return (
     <section
@@ -41,7 +41,7 @@ const Desktop = ({ className = "" }) => {
             </Box>
             <Box className="flex items-start gap-5">
               <Button
-                className="!pt-[15px] !pb-[15px] !pl-[51px] !pr-[51px]"
+                className="!pt-[11px] !pb-[11px] !pl-[51px] !pr-[51px]"
                 disableElevation
                 variant="contained"
                 sx={{
@@ -49,15 +49,18 @@ const Desktop = ({ className = "" }) => {
                   fontSize: "15",
                   background: "linear-gradient(106.53deg, #00b4fd, #003ace)",
                   borderRadius: "10px",
+                  transition: "all 0.3s ease",
                   "&:hover": {
-                    background: "linear-gradient(106.53deg, #00b4fd, #003ace)",
+                    background: "#ffffff",
+                    backgroundColor: "#ffffff",
+                    color: "#00b4fd",
                   },
                 }}
               >
                 REQUEST DEMO
               </Button>
               <Button
-                className="!pt-[15px] !pb-[15px] !pl-[59px] !pr-[59px]"
+                className="!pt-[11px] !pb-[11px] !pl-[59px] !pr-[59px]"
                 disableElevation
                 variant="outlined"
                 sx={{
@@ -65,7 +68,12 @@ const Desktop = ({ className = "" }) => {
                   fontSize: "15",
                   borderColor: "#e9f4f9",
                   borderRadius: "10px",
-                  "&:hover": { borderColor: "#e9f4f9" },
+                  transition: "all 0.3s ease",
+                  "&:hover": {
+                    backgroundColor: "#ffffff",
+                    color: "#00b4fd",
+                    borderColor: "#ffffff",
+                  },
                 }}
               >
                 Contact Us
@@ -348,8 +356,8 @@ const Desktop = ({ className = "" }) => {
               />
             </Box>
           </Box>
-          <Box className="w-[543px] flex items-start justify-end max-w-full !mt-[-50px] relative shrink-0 text-[11px] text-gray-100 mq800:!pl-[167px] mq800:!pr-[167px] mq800:box-border mq450:!pl-5 mq450:!pr-5 mq450:box-border">
-            <Box className="h-[117px] w-[254px] [backdrop-filter:blur(16.2px)] rounded-xl bg-[rgba(255,255,255,0.4)] overflow-hidden shrink-0 flex flex-col items-start !p-1 box-border gap-[6.2px] z-[1]">
+          <Box className="w-[543px] flex items-start justify-start max-w-full !mt-[-50px] relative shrink-0 text-[11px] text-gray-100 mq800:!pl-[167px] mq800:!pr-[167px] mq800:box-border mq450:!pl-5 mq450:!pr-5 mq450:box-border">
+            <Box className="h-[117px] w-[254px] !ml-[-45px] [backdrop-filter:blur(16.2px)] rounded-xl bg-[rgba(255,255,255,0.4)] overflow-hidden shrink-0 flex flex-col items-start !p-1 box-border gap-[6.2px] z-[1]">
               <Box className="!mt-[-188.1px] flex items-start !pt-0 !pb-[10.3px] !pl-[5px] !pr-1.5 shrink-0 font-[Inter]">
                 <Box className="w-[234.5px] flex items-start justify-between gap-5 shrink-0">
                   <Box className="flex items-start gap-[8.2px] shrink-0">

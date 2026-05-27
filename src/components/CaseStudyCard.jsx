@@ -18,12 +18,12 @@ const CaseStudyCard = ({ className = "", marginLeft, padding, arrowIcon }) => {
       >
         <Box className="flex flex-col items-start justify-end !pt-0 !pb-0.5 !pl-0 !pr-0 box-border max-w-full mq800:min-w-full mq1125:flex-1">
           <Box className="rounded-[10px] bg-[#07193c] overflow-hidden flex items-start !pt-[33.4px] !pb-[33.5px] !pl-[23px] !pr-[23px]">
-            <Box className="w-[321.2px] flex items-center justify-center flex-wrap content-center gap-x-[78.7px] gap-y-6 mq450:gap-[39px]">
-              <img className="h-[121.2px] w-[121px] relative" alt="" src="/Frame-263.svg" />
-              <img className="h-[121.2px] w-[121px] relative" alt="" src="/Frame-263.svg" />
-              <img className="h-[121.2px] w-[121px] relative" alt="" src="/Frame-263.svg" />
-              <img className="h-[121.2px] w-[121px] relative" alt="" src="/Frame-263.svg" />
-            </Box>
+            <img
+              className="w-[321.2px] h-[266.4px] object-contain relative"
+              loading="lazy"
+              alt=""
+              src="/Frame-55.svg"
+            />
           </Box>
         </Box>
         <Box className="flex flex-col items-start gap-[31.7px] max-w-full mq800:min-w-full mq1125:flex-1 mq450:gap-4">

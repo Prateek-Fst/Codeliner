@@ -21,3 +21,45 @@ body {
     border-width: 0;
   }
 }
+
+/* Continuous infinite scrolling marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+/* Tilting hand wave animation */
+@keyframes wave-tilt {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-12deg);
+  }
+  40% {
+    transform: rotate(14deg);
+  }
+  60% {
+    transform: rotate(-8deg);
+  }
+  80% {
+    transform: rotate(10deg);
+  }
+}
+
+.animate-wave-tilt {
+  animation: wave-tilt 2s ease-in-out infinite;
+  transform-origin: bottom center;
+  display: inline-block;
+}
+

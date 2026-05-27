@@ -27,7 +27,12 @@ const InsightsSection = ({ className = "" }) => {
               fontSize: "15",
               borderColor: "#e9f4f9",
               borderRadius: "10px",
-              "&:hover": { borderColor: "#e9f4f9" },
+              transition: "all 0.3s ease",
+              "&:hover": {
+                backgroundColor: "#ffffff",
+                color: "#00b4fd",
+                borderColor: "#ffffff",
+              },
             }}
           >
             Insights
@@ -35,12 +40,12 @@ const InsightsSection = ({ className = "" }) => {
         </Box>
         <Box className="rounded-[18px] bg-[#01141b] overflow-hidden flex items-end !pt-[25.5px] !pb-[25.5px] !pl-6 !pr-6 box-border gap-[32.9px] min-w-[670px] max-w-full text-xs text-[#2490bb] mq800:gap-4 mq800:flex-wrap mq1125:min-w-full mq1350:flex-1">
           <Box className="rounded-lg bg-[#07193c] overflow-hidden flex items-start !pt-[24.4px] !pb-[24.4px] !pl-[18px] !pr-[18px] mq800:flex-1">
-            <Box className="w-[257.2px] flex items-center justify-center flex-wrap content-center gap-x-[63px] gap-y-6 mq450:gap-[31px]">
-              <img className="h-[97.1px] w-[97px] relative" loading="lazy" alt="" src="/Frame-263.svg" />
-              <img className="h-[97.1px] w-[97px] relative" loading="lazy" alt="" src="/Frame-263.svg" />
-              <img className="h-[97.1px] w-[97px] relative" loading="lazy" alt="" src="/Frame-263.svg" />
-              <img className="h-[97.1px] w-[97px] relative" loading="lazy" alt="" src="/Frame-263.svg" />
-            </Box>
+            <img
+              className="w-[257.2px] h-[219px] object-contain relative"
+              loading="lazy"
+              alt=""
+              src="/Frame-55.svg"
+            />
           </Box>
           <Box className="flex flex-col items-start justify-end !pt-0 !pb-[12.5px] !pl-0 !pr-0 mq800:flex-1">
             <Box className="flex flex-col items-start gap-[52.1px] mq450:gap-[26px]">
@@ -60,7 +65,7 @@ const InsightsSection = ({ className = "" }) => {
                 </Box>
               </Box>
               <Button
-                className="!pt-2.5 !pb-2.5 !pl-[111px] !pr-[111px] z-[1]"
+                className="!pt-2.5 !pb-2.5 z-[1]"
                 disableElevation
                 variant="outlined"
                 sx={{
@@ -68,9 +73,15 @@ const InsightsSection = ({ className = "" }) => {
                   fontSize: "12",
                   borderColor: "rgba(233, 244, 249, 0.5)",
                   borderRadius: "10px",
-                  "&:hover": { borderColor: "rgba(233, 244, 249, 0.5)" },
                   width: 287,
                   height: 36,
+                  whiteSpace: "nowrap",
+                  transition: "all 0.3s ease",
+                  "&:hover": {
+                    backgroundColor: "#ffffff",
+                    color: "#00b4fd",
+                    borderColor: "#ffffff",
+                  },
                 }}
               >
                 read more
@@ -95,13 +106,13 @@ const InsightsSection = ({ className = "" }) => {
                     How to transition from a traditional to a digital bank
                   </Typography>
                   <Box className="flex items-start gap-3.5 text-sm text-[#64a8c4]">
-                    <div className="relative leading-[130%] opacity-[0.8]">David Grohl</div>
+                     <div className="relative leading-[130%] opacity-[0.8]">David Grohl</div>
                     <div className="relative leading-[130%] opacity-[0.8]">17/08/24</div>
                   </Box>
                 </Box>
               </Box>
               <Button
-                className="!pt-2.5 !pb-2.5 !pl-[111px] !pr-[111px]"
+                className="!pt-2.5 !pb-2.5"
                 disableElevation
                 variant="outlined"
                 sx={{
@@ -109,7 +120,15 @@ const InsightsSection = ({ className = "" }) => {
                   fontSize: "12",
                   borderColor: "rgba(233, 244, 249, 0.5)",
                   borderRadius: "10px",
-                  "&:hover": { borderColor: "rgba(233, 244, 249, 0.5)" },
+                  width: 287,
+                  height: 36,
+                  whiteSpace: "nowrap",
+                  transition: "all 0.3s ease",
+                  "&:hover": {
+                    backgroundColor: "#ffffff",
+                    color: "#00b4fd",
+                    borderColor: "#ffffff",
+                  },
                 }}
               >
                 read more

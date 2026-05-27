@@ -47,7 +47,7 @@ const SolutionsSection = ({ className = "" }) => {
           All of our solutions are tailor-made to your needs
         </Typography>
         <Button
-          className="!pt-[15px] !pb-[15px] !pl-[59px] !pr-[59px]"
+          className="!pt-[11px] !pb-[11px] !pl-[59px] !pr-[59px]"
           disableElevation
           variant="outlined"
           sx={{
@@ -55,7 +55,12 @@ const SolutionsSection = ({ className = "" }) => {
             fontSize: "15",
             borderColor: "#e9f4f9",
             borderRadius: "10px",
-            "&:hover": { borderColor: "#e9f4f9" },
+            transition: "all 0.3s ease",
+            "&:hover": {
+              backgroundColor: "#ffffff",
+              color: "#00b4fd",
+              borderColor: "#ffffff",
+            },
           }}
         >
           request demo

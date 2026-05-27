@@ -7,7 +7,7 @@ const CoreBankingFeatures = ({ className = "" }) => {
       className={`w-[1440px] bg-black overflow-hidden flex items-end !pt-[110px] !pb-[109.6px] !pl-[770px] !pr-20 box-border gap-[277.3px] mq800:h-auto mq800:gap-[69px] mq800:!pl-48 mq800:!pt-[71px] mq800:!pb-[71px] mq800:box-border mq450:gap-[35px] mq450:!pl-5 mq450:box-border mq1350:gap-[139px] mq1350:!pl-[385px] mq1350:!pr-10 mq1350:box-border ${className}`}
     >
       <img
-        className="!ml-[-929px] h-[461.4px] w-[651.7px] relative object-contain shrink-0"
+        className="!ml-[-929px] w-[651.7px] h-[480px] relative object-contain shrink-0"
         loading="lazy"
         alt=""
         src="/Container@2x.png"

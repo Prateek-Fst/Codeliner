@@ -12,7 +12,7 @@ const HomePage = () => {
   return (
     <Box className="relative w-full flex flex-col items-end leading-[normal] tracking-[normal]">
       <header className="fixed top-6 left-0 right-0 z-[100] flex justify-center !pl-4 !pr-4 box-border max-w-full text-left text-2xl text-white font-[Archivo]">
-        <Box className="w-[717px] [backdrop-filter:blur(15px)] rounded-xl bg-[rgba(47,47,47,0.7)] overflow-hidden flex items-center !pt-[9px] !pb-[9px] !pl-6 !pr-6 box-border gap-20 max-w-full mq800:gap-10 mq1125:flex-wrap justify-between">
+        <Box className="w-[717px] [backdrop-filter:blur(15px)] rounded-xl bg-[rgba(47,47,47,0.7)] overflow-hidden flex items-center !pt-[9px] !pb-[9px] !pl-[14px] !pr-6 box-border gap-20 max-w-full mq800:gap-10 mq1125:flex-wrap justify-between">
           <Typography
             className="!m-0 relative mq450:text-[19px] mq450:leading-[23px]"
             variant="inherit"
@@ -22,20 +22,20 @@ const HomePage = () => {
             N7
           </Typography>
           <Box className="flex items-center gap-20 max-w-full mq800:gap-10 mq1125:flex-wrap mq450:gap-5">
-            <nav className="!m-0 flex items-center gap-[19px] text-left text-xs text-white font-['Chivo_Mono_Medium']">
-              <button className="flex items-center gap-1 bg-transparent border-none cursor-pointer text-[#e9f4f9] text-xs font-['Chivo_Mono_Medium'] uppercase tracking-wide">
+            <nav className="!m-0 flex items-center gap-[19px] text-left text-xs text-white font-[Archivo]">
+              <button className="flex items-center gap-1 bg-transparent border-none cursor-pointer text-[#e9f4f9] text-xs font-[Archivo] font-medium uppercase tracking-[0.05em]">
                 Solutions
                 <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
                   <path d="M1 1L5 5L9 1" stroke="#e9f4f9" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </button>
-              <button className="flex items-center gap-1 bg-transparent border-none cursor-pointer text-[#e9f4f9] text-xs font-['Chivo_Mono_Medium'] uppercase tracking-wide">
+              <button className="flex items-center gap-1 bg-transparent border-none cursor-pointer text-[#e9f4f9] text-xs font-[Archivo] font-medium uppercase tracking-[0.05em]">
                 Resources
                 <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
                   <path d="M1 1L5 5L9 1" stroke="#e9f4f9" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </button>
-              <button className="flex items-center gap-1 bg-transparent border-none cursor-pointer text-[#e9f4f9] text-xs font-['Chivo_Mono_Medium'] uppercase tracking-wide">
+              <button className="flex items-center gap-1 bg-transparent border-none cursor-pointer text-[#e9f4f9] text-xs font-[Archivo] font-medium uppercase tracking-[0.05em]">
                 About Us
               </button>
             </nav>
@@ -44,10 +44,18 @@ const HomePage = () => {
               variant="outlined"
               sx={{
                 color: "#e9f4f9",
-                fontSize: "12",
+                fontSize: "12px",
+                fontFamily: "Archivo, sans-serif",
+                fontWeight: 500,
+                letterSpacing: "0.05em",
                 borderColor: "#e9f4f9",
                 borderRadius: "6px",
-                "&:hover": { borderColor: "#e9f4f9" },
+                transition: "all 0.3s ease",
+                "&:hover": {
+                  backgroundColor: "#ffffff",
+                  color: "#00b4fd",
+                  borderColor: "#ffffff",
+                },
               }}
             >
               request demo
@@ -63,10 +71,15 @@ const HomePage = () => {
         <section className="w-[1440px] bg-black overflow-hidden flex items-start justify-center !pt-[127px] !pb-[127px] !pl-[21px] !pr-5 box-border text-right text-[572.6px] text-[transparent] font-[Archivo] mq800:h-auto mq800:!pt-[83px] mq800:!pb-[83px] mq800:box-border">
           <Box className="h-[427px] w-[1279px] rounded-[27px] [background:linear-gradient(99.21deg,_#031e2a,_#000d12_63.08%)] overflow-hidden shrink-0 flex items-end !pt-[112.3px] !pb-[112.7px] !pl-[65px] !pr-16 box-border relative isolate gap-[84.2px] mq800:h-auto mq800:gap-[42px] mq450:gap-[21px] mq450:!pt-[73px] mq450:!pb-[73px] mq450:box-border mq1350:!pl-8 mq1350:!pr-8 mq1350:box-border">
             <Typography
-              className="!!m-[0 important] h-[687px] w-[1141px] absolute top-[-160.7px] right-[-85.6px] inline-block [-webkit-text-stroke:1.6px_#02171f] [paint-order:stroke_fill] opacity-[0.5] shrink-0 mq800:text-[229px] mq800:leading-[412px] mq450:text-[143px] mq450:leading-[275px]"
+              className="!!m-[0 important] h-[687px] w-[1141px] absolute top-[-160.7px] right-[-85.6px] inline-block [-webkit-text-stroke:1.6px_#00b4fd] [paint-order:stroke_fill] opacity-[0.25] shrink-0 mq800:text-[229px] mq800:leading-[412px] mq450:text-[143px] mq450:leading-[275px]"
               variant="inherit"
               variantMapping={{ inherit: "h2" }}
-              sx={{ fontWeight: "500", lineHeight: "120%" }}
+              sx={{
+                fontWeight: "500",
+                lineHeight: "120%",
+                WebkitMaskImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%)",
+                maskImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%)",
+              }}
             >
               CB7
             </Typography>
@@ -84,15 +97,26 @@ const HomePage = () => {
             <Box className="h-[125.3px] flex flex-col items-start shrink-0 mq800:h-auto">
               <Box className="h-[49px] flex items-start gap-10 mq800:flex-wrap mq450:gap-5">
                 <Button
-                  className="!pt-[15px] !pb-[15px] !pl-[59px] !pr-[59px]"
+                  className="!pt-[11px] !pb-[11px] !pl-[59px] !pr-[59px]"
                   disableElevation
                   variant="outlined"
-                  sx={{ color: "#e9f4f9", fontSize: "15", borderColor: "#e9f4f9", borderRadius: "10px", "&:hover": { borderColor: "#e9f4f9" } }}
+                  sx={{
+                    color: "#e9f4f9",
+                    fontSize: "15",
+                    borderColor: "#e9f4f9",
+                    borderRadius: "10px",
+                    transition: "all 0.3s ease",
+                    "&:hover": {
+                      backgroundColor: "#ffffff",
+                      color: "#00b4fd",
+                      borderColor: "#ffffff",
+                    },
+                  }}
                 >
                   Contact Us
                 </Button>
                 <Button
-                  className="!pt-[15px] !pb-[15px] !pl-[51px] !pr-[51px]"
+                  className="!pt-[11px] !pb-[11px] !pl-[51px] !pr-[51px]"
                   disableElevation
                   variant="contained"
                   sx={{
@@ -100,7 +124,12 @@ const HomePage = () => {
                     fontSize: "15",
                     background: "linear-gradient(106.53deg, #00b4fd, #003ace)",
                     borderRadius: "10px",
-                    "&:hover": { background: "linear-gradient(106.53deg, #00b4fd, #003ace)" },
+                    transition: "all 0.3s ease",
+                    "&:hover": {
+                      background: "#ffffff",
+                      backgroundColor: "#ffffff",
+                      color: "#00b4fd",
+                    },
                   }}
                 >
                   REQUEST DEMO
@@ -127,15 +156,26 @@ const HomePage = () => {
           <Box className="flex flex-col items-start !pt-[76.5px] !pb-0 !pl-0 !pr-0">
             <Box className="flex items-center justify-end gap-10 mq800:flex-wrap mq450:gap-5">
               <Button
-                className="!pt-[15px] !pb-[15px] !pl-[59px] !pr-[59px]"
+                className="!pt-[11px] !pb-[11px] !pl-[59px] !pr-[59px]"
                 disableElevation
                 variant="outlined"
-                sx={{ color: "#e9f4f9", fontSize: "15", borderColor: "#e9f4f9", borderRadius: "10px", "&:hover": { borderColor: "#e9f4f9" } }}
+                sx={{
+                  color: "#e9f4f9",
+                  fontSize: "15",
+                  borderColor: "#e9f4f9",
+                  borderRadius: "10px",
+                  transition: "all 0.3s ease",
+                  "&:hover": {
+                    backgroundColor: "#ffffff",
+                    color: "#00b4fd",
+                    borderColor: "#ffffff",
+                  },
+                }}
               >
                 Contact Us
               </Button>
               <Button
-                className="!pt-[15px] !pb-[15px] !pl-[51px] !pr-[51px]"
+                className="!pt-[11px] !pb-[11px] !pl-[51px] !pr-[51px]"
                 disableElevation
                 variant="contained"
                 sx={{
@@ -143,7 +183,12 @@ const HomePage = () => {
                   fontSize: "15",
                   background: "linear-gradient(106.53deg, #00b4fd, #003ace)",
                   borderRadius: "10px",
-                  "&:hover": { background: "linear-gradient(106.53deg, #00b4fd, #003ace)" },
+                  transition: "all 0.3s ease",
+                  "&:hover": {
+                    background: "#ffffff",
+                    backgroundColor: "#ffffff",
+                    color: "#00b4fd",
+                  },
                 }}
               >
                 REQUEST DEMO

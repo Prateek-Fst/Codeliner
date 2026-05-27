@@ -10,19 +10,30 @@ const DigitalBankingSection = ({ className = "" }) => {
       <MarqueeBanner />
       <Box className="w-[1440px] h-[2647px] bg-white overflow-hidden shrink-0 flex flex-col items-start !pt-[100px] !pb-[115.6px] !pl-[81px] !pr-20 box-border relative isolate gap-[155.7px] max-w-full mq800:gap-[78px] mq800:!pt-[27px] mq800:!pb-8 mq800:!pl-10 mq800:!pr-10 mq800:box-border mq450:gap-[39px] mq1350:h-auto mq1350:!pt-[42px] mq1350:!pb-[49px] mq1350:box-border">
         <Typography
-          className="!!m-[0 important] w-[744px] h-[687px] absolute top-[-66.7px] left-[277px] inline-block [-webkit-text-stroke:1.6px_#e9f4f9] [paint-order:stroke_fill] opacity-[0.5] shrink-0 mq800:text-[229px] mq800:leading-[412px] mq450:text-[143px] mq450:leading-[275px]"
+          className="!!m-[0 important] w-[744px] h-[687px] absolute top-[-66.7px] left-[277px] inline-block [-webkit-text-stroke:1.6px_#00b4fd] [paint-order:stroke_fill] opacity-[0.25] shrink-0 mq800:text-[229px] mq800:leading-[412px] mq450:text-[143px] mq450:leading-[275px]"
           variant="inherit"
           variantMapping={{ inherit: "h2" }}
-          sx={{ fontWeight: "500", lineHeight: "120%" }}
+          sx={{
+            fontWeight: "500",
+            lineHeight: "120%",
+            WebkitMaskImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%)",
+            maskImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%)",
+          }}
         >
           N7
         </Typography>
         <Box className="w-[778.7px] h-[778.7px] absolute !!m-[0 important] top-[1928.6px] left-[-364.2px] [filter:blur(100px)] rounded-[50%] [background:linear-gradient(100.92deg,_rgba(0,_208,_253,_0.1),_rgba(0,_21,_206,_0.1))] shrink-0" />
         <Typography
-          className="!!m-[0 important] w-[861px] h-[1829px] absolute top-[957.3px] left-[886.9px] inline-block opacity-[0.2] shrink-0 mq800:text-[610px] mq800:leading-[1097px] mq450:text-[381px] mq450:leading-[732px]"
+          className="!!m-[0 important] w-[861px] h-[1829px] absolute top-[957.3px] left-[886.9px] inline-block [-webkit-text-stroke:1.6px_#00b4fd] [paint-order:stroke_fill] text-[transparent] opacity-[0.25] shrink-0 mq800:text-[610px] mq800:leading-[1097px] mq450:text-[381px] mq450:leading-[732px]"
           variant="inherit"
           variantMapping={{ inherit: "h1" }}
-          sx={{ fontWeight: "500", fontSize: "1524.1px", lineHeight: "120%" }}
+          sx={{
+            fontWeight: "500",
+            fontSize: "1524.1px",
+            lineHeight: "120%",
+            WebkitMaskImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%)",
+            maskImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%)",
+          }}
         >
           7
         </Typography>
@@ -30,7 +41,7 @@ const DigitalBankingSection = ({ className = "" }) => {
           className="w-[86.33%] h-[47.04%] absolute !!m-[0 important] top-[15.8%] right-[66.67%] bottom-[37.16%] left-[-53%] max-w-full overflow-hidden max-h-full z-[1] shrink-0"
           loading="lazy"
           alt=""
-          src="/Frame-26.svg"
+          src="/Frame-26-blue.svg"
         />
         <Box className="w-[585.9px] h-[585.9px] absolute !!m-[0 important] top-[-260.9px] left-[-85.9px] [filter:blur(100px)] rounded-[50%] [background:linear-gradient(103.43deg,_rgba(253,_167,_0,_0.02),_rgba(206,_87,_0,_0.02))] z-[1] shrink-0" />
         <Box className="w-[778.7px] h-[778.7px] absolute !!m-[0 important] top-[-91.6px] left-[661.3px] [filter:blur(100px)] rounded-[50%] [background:linear-gradient(103.43deg,_rgba(253,_167,_0,_0.05),_rgba(206,_87,_0,_0.05))] z-[1] shrink-0" />
@@ -51,7 +62,7 @@ const DigitalBankingSection = ({ className = "" }) => {
                 </div>
               </Box>
               <Button
-                className="!pt-[15px] !pb-[15px] !pl-[51px] !pr-[51px]"
+                className="!pt-[11px] !pb-[11px] !pl-[51px] !pr-[51px]"
                 disableElevation
                 variant="contained"
                 sx={{
@@ -59,7 +70,12 @@ const DigitalBankingSection = ({ className = "" }) => {
                   fontSize: "15",
                   background: "linear-gradient(106.53deg, #00b4fd, #003ace)",
                   borderRadius: "10px",
-                  "&:hover": { background: "linear-gradient(106.53deg, #00b4fd, #003ace)" },
+                  transition: "all 0.3s ease",
+                  "&:hover": {
+                    background: "#ffffff",
+                    backgroundColor: "#ffffff",
+                    color: "#00b4fd",
+                  },
                 }}
               >
                 REQUEST DEMO
@@ -143,10 +159,15 @@ const DigitalBankingSection = ({ className = "" }) => {
         </Box>
         <Box className="rounded-[27px] [background:linear-gradient(99.21deg,_#031e2a,_#000d12_63.08%)] overflow-hidden flex items-end !pt-[112.3px] !pb-[112.7px] !pl-[65px] !pr-16 box-border relative isolate gap-[84.2px] max-w-full z-[1] shrink-0 mq800:gap-[42px] mq450:gap-[21px] mq450:!pt-[73px] mq450:!pb-[73px] mq450:box-border mq1350:flex-wrap mq1350:!pl-8 mq1350:!pr-8 mq1350:box-border">
           <Typography
-            className="!!m-[0 important] h-[687px] w-[744px] absolute top-[-160.7px] right-[-85.6px] inline-block [-webkit-text-stroke:1.6px_#02171f] [paint-order:stroke_fill] opacity-[0.5] shrink-0 mq800:text-[229px] mq800:leading-[412px] mq450:text-[143px] mq450:leading-[275px]"
+            className="!!m-[0 important] h-[687px] w-[744px] absolute top-[-160.7px] right-[-85.6px] inline-block [-webkit-text-stroke:1.6px_#00b4fd] [paint-order:stroke_fill] opacity-[0.25] shrink-0 mq800:text-[229px] mq800:leading-[412px] mq450:text-[143px] mq450:leading-[275px]"
             variant="inherit"
             variantMapping={{ inherit: "h2" }}
-            sx={{ fontWeight: "500", lineHeight: "120%" }}
+            sx={{
+              fontWeight: "500",
+              lineHeight: "120%",
+              WebkitMaskImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%)",
+              maskImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%)",
+            }}
           >
             N7
           </Typography>
@@ -164,7 +185,7 @@ const DigitalBankingSection = ({ className = "" }) => {
           <Box className="h-[125.3px] flex flex-col items-start max-w-full shrink-0 mq800:h-auto mq800:min-w-full mq1350:flex-1">
             <Box className="h-[49px] flex items-start gap-10 mq800:flex-wrap mq450:gap-5">
               <Button
-                className="!pt-[15px] !pb-[15px] !pl-[59px] !pr-[59px]"
+                className="!pt-[11px] !pb-[11px] !pl-[59px] !pr-[59px]"
                 disableElevation
                 variant="outlined"
                 sx={{
@@ -172,13 +193,18 @@ const DigitalBankingSection = ({ className = "" }) => {
                   fontSize: "15",
                   borderColor: "#e9f4f9",
                   borderRadius: "10px",
-                  "&:hover": { borderColor: "#e9f4f9" },
+                  transition: "all 0.3s ease",
+                  "&:hover": {
+                    backgroundColor: "#ffffff",
+                    color: "#00b4fd",
+                    borderColor: "#ffffff",
+                  },
                 }}
               >
                 Contact Us
               </Button>
               <Button
-                className="!pt-[15px] !pb-[15px] !pl-[51px] !pr-[51px]"
+                className="!pt-[11px] !pb-[11px] !pl-[51px] !pr-[51px]"
                 disableElevation
                 variant="contained"
                 sx={{
@@ -186,7 +212,12 @@ const DigitalBankingSection = ({ className = "" }) => {
                   fontSize: "15",
                   background: "linear-gradient(106.53deg, #00b4fd, #003ace)",
                   borderRadius: "10px",
-                  "&:hover": { background: "linear-gradient(106.53deg, #00b4fd, #003ace)" },
+                  transition: "all 0.3s ease",
+                  "&:hover": {
+                    background: "#ffffff",
+                    backgroundColor: "#ffffff",
+                    color: "#00b4fd",
+                  },
                 }}
               >
                 REQUEST DEMO
