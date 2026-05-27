@@ -34,7 +34,7 @@ const getSHELLSTextStyle = (styleKey) => {
   }
 };
 
-const Logo = ({ className = "", name1 = "Header-Logo", vector, sHELLS }) => {
+const Logo = ({ className = "", name1 = "Header-Logo", vector, label }) => {
   const variantKey = `${name1}`;
 
   return (
@@ -56,7 +56,7 @@ const Logo = ({ className = "", name1 = "Header-Logo", vector, sHELLS }) => {
         variantMapping={{ inherit: "b" }}
         sx={{ lineHeight: "110%", fontWeight: "700" }}
       >
-        {sHELLS}
+        {label}
       </Typography>
     </Box>
   );
@@ -65,9 +65,7 @@ const Logo = ({ className = "", name1 = "Header-Logo", vector, sHELLS }) => {
 Logo.propTypes = {
   className: PropTypes.string,
   vector: PropTypes.string,
-  sHELLS: PropTypes.string,
-
-  /** Variant props */
+  label: PropTypes.string,
   name1: PropTypes.string,
 };
 

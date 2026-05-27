@@ -1,11 +1,7 @@
 import { Box } from "@mui/material";
 import PropTypes from "prop-types";
 
-const Component2 = ({
-  className = "",
-  property1 = "Frame 61",
-  insightsNavigator,
-}) => {
+const ReadMoreBtn = ({ className = "", arrowIcon }) => {
   return (
     <Box
       className={`flex flex-col items-start gap-[2.6px] shrink-0 text-right text-[12.2px] text-blue font-['Chivo_Mono_Medium'] ${className}`}
@@ -15,7 +11,7 @@ const Component2 = ({
         <img
           className="h-[12.7px] w-[11.9px] relative object-contain"
           alt=""
-          src={insightsNavigator}
+          src={arrowIcon}
         />
       </Box>
       <Box className="w-[29.3px] h-[0.9px] relative border-blue border-solid border-t-[0.9px] box-border" />
@@ -23,12 +19,9 @@ const Component2 = ({
   );
 };
 
-Component2.propTypes = {
+ReadMoreBtn.propTypes = {
   className: PropTypes.string,
-  insightsNavigator: PropTypes.string,
-
-  /** Variant props */
-  property1: PropTypes.string,
+  arrowIcon: PropTypes.string,
 };
 
-export default Component2;
+export default ReadMoreBtn;

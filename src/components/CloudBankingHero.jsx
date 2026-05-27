@@ -1,8 +1,8 @@
 import { Typography, Box, Button } from "@mui/material";
-import Component3 from "./Component3";
+import LearnMoreBtn from "./LearnMoreBtn";
 import PropTypes from "prop-types";
 
-const CbTitle = ({ className = "" }) => {
+const CloudBankingHero = ({ className = "" }) => {
   return (
     <section
       className={`w-[1440px] bg-black overflow-hidden flex items-end !pt-[80.2px] !pb-[77.4px] !pl-20 !pr-20 box-border relative isolate gap-[239.2px] text-left text-[572.6px] text-[transparent] font-[Archivo] mq800:gap-[60px] mq800:!pt-[52px] mq800:!pb-[50px] mq800:box-border mq450:gap-[30px] mq1350:gap-[120px] mq1350:!pl-10 mq1350:!pr-10 mq1350:box-border ${className}`}
@@ -23,11 +23,7 @@ const CbTitle = ({ className = "" }) => {
                 className="!m-0 w-[607.8px] relative inline-block mq800:text-[42px] mq800:leading-[51px] mq450:text-[32px] mq450:leading-[38px]"
                 variant="inherit"
                 variantMapping={{ inherit: "h1" }}
-                sx={{
-                  fontWeight: "400",
-                  lineHeight: "120%",
-                  letterSpacing: "-0.01em",
-                }}
+                sx={{ fontWeight: "400", lineHeight: "120%", letterSpacing: "-0.01em" }}
               >
                 A complete cloud-based core banking.
               </Typography>
@@ -44,15 +40,13 @@ const CbTitle = ({ className = "" }) => {
                 fontSize: "15",
                 background: "linear-gradient(106.53deg, #00b4fd, #003ace)",
                 borderRadius: "10px",
-                "&:hover": {
-                  background: "linear-gradient(106.53deg, #00b4fd, #003ace)",
-                },
+                "&:hover": { background: "linear-gradient(106.53deg, #00b4fd, #003ace)" },
               }}
             >
               REQUEST DEMO
             </Button>
           </Box>
-          <Component3 property1="Frame 61" spacerLearn="/3.svg" />
+          <LearnMoreBtn arrowIcon="/3.svg" />
         </Box>
       </section>
       <img
@@ -65,8 +59,8 @@ const CbTitle = ({ className = "" }) => {
   );
 };
 
-CbTitle.propTypes = {
+CloudBankingHero.propTypes = {
   className: PropTypes.string,
 };
 
-export default CbTitle;
+export default CloudBankingHero;

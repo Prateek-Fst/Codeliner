@@ -6,36 +6,12 @@ import PropTypes from "prop-types";
 
 const Desktop = ({ className = "" }) => {
   const [logoItems] = useState([
-    {
-      name1: "Shell",
-      vector: "/Vector.svg",
-      sHELLS: "SHELLS",
-    },
-    {
-      name1: "SmartFinder",
-      vector: "/Group-45.svg",
-      sHELLS: "SmartFinder",
-    },
-    {
-      name1: "Zoomerr",
-      vector: "/Vector1.svg",
-      sHELLS: "Zoomerr",
-    },
-    {
-      name1: "ArtVenue",
-      vector: "/Group-46.svg",
-      sHELLS: "ArtVenue",
-    },
-    {
-      name1: "Kontrastr",
-      vector: "/Group-47.svg",
-      sHELLS: "kontrastr",
-    },
-    {
-      name1: "Waves",
-      vector: "/Vector2.svg",
-      sHELLS: "SHELLS",
-    },
+    { name1: "Shell", vector: "/Vector.svg", label: "SHELLS" },
+    { name1: "SmartFinder", vector: "/Group-45.svg", label: "SmartFinder" },
+    { name1: "Zoomerr", vector: "/Vector1.svg", label: "Zoomerr" },
+    { name1: "ArtVenue", vector: "/Group-46.svg", label: "ArtVenue" },
+    { name1: "Kontrastr", vector: "/Group-47.svg", label: "kontrastr" },
+    { name1: "Waves", vector: "/Vector2.svg", label: "SHELLS" },
   ]);
   return (
     <section
@@ -721,12 +697,7 @@ const Desktop = ({ className = "" }) => {
         </div>
         <Box className="flex items-center gap-[18.4px] opacity-[0.9] mq800:flex-wrap">
           {logoItems.map((item, index) => (
-            <Logo
-              key={index}
-              name1={item.name1}
-              vector={item.vector}
-              sHELLS={item.sHELLS}
-            />
+            <Logo key={index} name1={item.name1} vector={item.vector} label={item.label} />
           ))}
         </Box>
       </Box>
